@@ -1,7 +1,9 @@
 package com.uc.querydsl.repository;
 
-import com.uc.querydsl.model.entity.Category;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.infobip.spring.data.jpa.ExtendedQuerydslJpaRepository;
 
-public interface CategoryRepository extends JpaRepository<Category,Long> {
+import com.uc.querydsl.model.entity.Category;
+
+
+public interface CategoryRepository extends ExtendedQuerydslJpaRepository<Category, Long> {
 }
